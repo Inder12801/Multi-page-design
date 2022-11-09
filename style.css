@@ -1,0 +1,682 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=DynaPuff:wght@500&family=Fjalla+One&family=Lato:ital,wght@1,900&family=Poppins:wght@300&family=Shadows+Into+Light&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  width: 100vw;
+}
+a {
+  text-decoration: none;
+}
+
+.header {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6)),
+    url("images/banner.png");
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.navbar {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+  position: relative;
+  top: 40px;
+}
+.navbar img {
+  width: 180px;
+}
+.logo {
+  margin-left: 50px;
+  cursor: pointer;
+}
+.nav-list {
+  color: white;
+  list-style-type: none;
+  margin-right: 50px;
+}
+.list-item {
+  display: inline-block;
+  margin: 0 10px;
+  padding-bottom: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.list-item a {
+  color: inherit;
+}
+.list-item:hover {
+  border-bottom: 2px solid #ce4e3d;
+}
+
+.fa-bars {
+  position: absolute;
+  right: 20px;
+  font-size: 30px;
+  display: none;
+}
+
+.fa-solid {
+  position: absolute;
+  right: 20px;
+  font-size: 30px;
+  display: none;
+}
+
+.content {
+  position: relative;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  top: 200px;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 3.7vmax;
+  font-weight: 700;
+}
+.content p {
+  font-size: 1vmax;
+  margin: 25px 0;
+  width: 70%;
+}
+
+/* ---------Button Animation--------- */
+.btnDiv {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 12px 22px;
+  border-radius: 2px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.line1 {
+  height: 1px;
+  width: 30px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  left: 15px;
+  transition: 0.5s ease;
+}
+.line2 {
+  height: 1px;
+  width: 30px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  right: 15px;
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  background-color: #ce4e3d;
+  border-color: #ce4e3d;
+}
+.btnDiv:hover .line1 {
+  position: relative;
+  background-color: #ce4e3d;
+}
+.btnDiv:hover .line2 {
+  position: relative;
+  background-color: #ce4e3d;
+}
+
+/* --------------------------------- */
+
+.courses-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+}
+.course-heading {
+  font-size: 3.5vmax;
+  font-weight: 900;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.course-subheading {
+  width: 40%;
+  color: rgb(156, 156, 156);
+  text-align: center;
+}
+
+.course-cards {
+  display: flex;
+  width: 85%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.course-card {
+  width: 33%;
+  text-align: center;
+  background-color: #f3d4cf;
+  margin: 0 20px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.course-card:hover {
+  box-shadow: 0 0 8px 5px rgb(202, 199, 199);
+}
+
+.course-card-heading {
+  font-weight: 800;
+  font-size: 1.1em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.course-card-content {
+  padding: 20px;
+  padding-top: 0;
+  font-size: 0.9em;
+}
+/* --------------------------------------------------- */
+
+.campus-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+}
+
+.campus-heading {
+  font-size: 3.5vmax;
+  font-weight: 900;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.campus-subheading {
+  width: 40%;
+  color: rgb(156, 156, 156);
+  text-align: center;
+}
+
+.campus-cards {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.campus-card {
+  width: 280px;
+  height: 100%;
+  margin: 0 20px;
+  position: relative;
+  transition: 1s linear;
+}
+.campus-card img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.campus-card-name {
+  width: 100%;
+  height: 98.6%;
+  position: absolute;
+  z-index: 4;
+  left: 0%;
+  color: white;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  transition: 0.5s linear;
+  opacity: 0;
+}
+
+.campus-card-name:hover {
+  opacity: 100%;
+  background-color: #dd3721b2;
+}
+
+/* ----------------------------------------------------------------------- */
+
+.facility-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  font-family: "Poppins", sans-serif;
+  width: 100vw;
+}
+
+.facility-heading {
+  font-size: 3.5vmax;
+  font-weight: 900;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.facility-subheading {
+  width: 40%;
+  color: rgb(156, 156, 156);
+  text-align: center;
+}
+
+.facility-cards {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.facility-card {
+  width: 30%;
+  margin: 0 20px;
+}
+.facility-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.facility-card-heading {
+  font-weight: 800;
+  font-size: 1em;
+  margin-top: 15px;
+}
+.faciliy-card-content {
+  font-size: 0.8em;
+}
+
+/* ---------------------------------------------------------------- */
+
+.testimonial-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+}
+
+.testimonial-heading {
+  font-size: 3.3vmax;
+  font-weight: 900;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.testimonial-subheading {
+  width: 40%;
+  color: rgb(156, 156, 156);
+  text-align: center;
+}
+
+.testimonial-cards {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.testimonial-card {
+  padding: 15px;
+  width: 50%;
+  background-color: #f3d4cf;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+
+.testimonial-card img {
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+}
+
+.testimonial-card-content {
+  padding-left: 20px;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.testimonial-card-content span:nth-child(1) {
+  font-size: 0.8em;
+}
+
+.testimonial-card-content span:nth-child(2) {
+  font-weight: 900;
+  margin: 8px 0;
+  font-size: 1em;
+}
+
+/* -------------------------------------------------- */
+
+.contact-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6)),
+    url("images/banner2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 80%;
+  height: 350px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 60px auto;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-section h1 {
+  width: 70%;
+  font-size: 2.5vmax;
+  font-weight: 900;
+  color: white;
+  text-transform: capitalize;
+}
+
+.contact-section button {
+  text-transform: uppercase;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+.contact-form-section {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  background-color: rgb(255, 255, 255);
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 170px;
+}
+
+.contact-form-heading {
+  font-size: 3.3vmax;
+  font-weight: 900;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.contact-from-container {
+  display: flex;
+  width: 100%;
+  margin: 50px 0;
+}
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  padding-left: 20px;
+}
+
+.contact-form {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.contact-form form input,
+textarea {
+  margin: 10px 0;
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: 1px solid #ce4e3d;
+  border-color: #ce4e3d;
+  outline: #ce4e3d;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+}
+
+.contact-form form input,
+textarea::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-form form .btn {
+  width: 35%;
+  border-color: #ee432d;
+  color: #ee432d;
+}
+
+.contact-form form .btn:hover {
+  color: white;
+}
+
+.contact-details-row {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.contact-details-row span svg {
+  width: 25px;
+  margin: 0 20px;
+  color: #ee432d;
+}
+
+/* ------------------------------------------------------------------- */
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  /* margin-top: 150px; */
+  margin-bottom: 30px;
+}
+
+.about-section-heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.about-section-subheading {
+  width: 70%;
+  color: rgb(156, 156, 156);
+  text-align: center;
+  margin: 40px 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.social-icons i {
+  font-size: 25px;
+  margin: 0 15px;
+  color: #ee432d;
+  cursor: pointer;
+  position: relative;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.social-icons i:hover {
+  background-color: #ee432d;
+  color: white;
+}
+
+/* ------------------------------------------------------------ */
+
+.centre {
+  justify-content: center;
+}
+
+/* -----------------Responsive----------------- */
+
+@media screen and (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
+  .logo {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .navbar {
+    top: 0;
+  }
+  .content {
+    width: 90%;
+    margin: auto;
+  }
+  .content h1 {
+    font-size: 3.3vmax;
+  }
+  .content p {
+    font-size: 1.8vmax;
+    width: 100%;
+  }
+  .nav-list {
+    position: absolute;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    left: -100%;
+    right: 0px;
+    top: 0px;
+    background-color: #f54646f1;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    transition: 0.6s linear;
+  }
+  .nav-list li {
+    display: block;
+    margin: 30px 20px;
+  }
+  .fa-bars {
+    display: inline-block;
+  }
+  .fa-solid {
+    display: inline-block;
+    right: 10px;
+    top: 10px;
+    z-index: 2;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  .fa-xmark {
+    display: none;
+  }
+
+  .course-subheading {
+    width: 90%;
+  }
+  .course-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .course-card {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .campus-subheading {
+    width: 90%;
+  }
+  .campus-cards {
+    flex-direction: column;
+  }
+  .campus-card {
+    margin: 20px 0;
+  }
+  .facility-subheading {
+    width: 90%;
+  }
+  .facility-cards {
+    width: 100%;
+    flex-direction: column;
+  }
+  .facility-card {
+    width: 80%;
+    margin: 15px 0;
+  }
+  .contact-section {
+    width: 90%;
+    height: 450px;
+    background-size: 100% 100%;
+  }
+
+  .contact-section h1 {
+    width: 90%;
+  }
+
+  .testimonial-subheading {
+    width: 90%;
+  }
+  .testimonial-cards {
+    width: 100%;
+    flex-direction: column;
+  }
+  .testimonial-card {
+    width: 80%;
+    margin: 20px 0;
+  }
+
+  .contact-from-container {
+    flex-direction: column;
+  }
+  .contact-details {
+    width: 100%;
+  }
+  .contact-form {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .contact-form form .btn {
+    width: 60%;
+  }
+  .about-section-subheading {
+    width: 90%;
+  }
+}
